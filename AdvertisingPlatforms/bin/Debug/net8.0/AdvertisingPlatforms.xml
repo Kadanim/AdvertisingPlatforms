@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdvertisingPlatforms</name>
+    </assembly>
+    <members>
+        <member name="M:AdvertisingPlatforms.Controllers.AdvertisingController.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Загружает данные о рекламных площадках из файла.
+            </summary>
+            <param name="file">Файл с данными в формате "Площадка:локация1,локация2".</param>
+            <returns>200 OK при успехе или 400 BadRequest при ошибке.</returns>
+            <exception cref="T:System.ArgumentException">Вызывается, если файл пустой или отсутствует.</exception>
+        </member>
+        <member name="M:AdvertisingPlatforms.Controllers.AdvertisingController.GetPlatforms(System.String)">
+            <summary>
+            Возвращает список рекламных площадок, действующих в указанной локации и её родителях.
+            </summary>
+            <param name="name">Путь локации в формате "/ru/svrd/revda" (должен начинаться с "/").</param>
+            <returns>200 OK со списком площадок.</returns>
+            <exception cref="T:System.ArgumentException">Вызывается при некорректной локации (пустая или без "/").</exception>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "AdvertisingPlatforms.Controllers.AdvertisingController",
+    "Method": "GetPlatforms",
+    "RelativePath": "api/advertising/platforms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdvertisingPlatforms.Controllers.AdvertisingController",
+    "Method": "UploadFile",
+    "RelativePath": "api/advertising/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
